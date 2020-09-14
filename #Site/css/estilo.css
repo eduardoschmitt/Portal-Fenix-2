@@ -1,0 +1,723 @@
+/* Configurações Layout
+___________________________________________________ */
+body,
+html {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: 0;
+      margin: 0;
+      /* background: #014080; */
+      /* background: #111; */
+      width: 100%;
+      font-size: 1em;
+}
+
+body {
+      position: relative;
+}
+
+/* Personalização Srolllbar */
+::-webkit-scrollbar {
+      width: 6px;
+      background: #011a33;
+}
+
+::-webkit-scrollbar-track-piece {
+      background: #011a33;
+}
+
+::-webkit-scrollbar-thumb {
+      background: #eee;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+}
+
+
+/* Personaliza O INPUT DATARECOMENDADA */
+#dataRecomendadaJuridica::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+}
+
+#dataRecomendadaFisica::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+}
+
+#cadastro input[type="date"] {
+      position: relative;
+      padding: 4px;
+}
+
+#cadastro input[type="date"]::-webkit-calendar-picker-indicator {
+      color: transparent;
+      background: none;
+      z-index: 1;
+}
+
+#cadastro input[type="date"]:before {
+      color: transparent;
+      background: none;
+      display: block;
+      font-family: 'FontAwesome';
+      content: '\f073';
+      width: 15px;
+      height: 20px;
+      position: absolute;
+      top: 7px;
+      right: 6px;
+      color: #999;
+}
+
+/* ------------------------- */
+
+textarea {
+      resize: both;
+      max-height: min-content;
+      min-height: 96px;
+      max-width: 100%;
+      min-width: 485.600px;
+}
+
+small {
+      font-size: 13px;
+}
+
+
+/* Classe para tirar a transição e o outline/bpx-shadow do bootstrap 4
+------------------------------ */
+/* button.btn-outline-none:active, 
+ button.btn-outline-none:focus, 
+ button.btn-outline-none:hover{
+    border:none !important;
+    outline:none !important;
+    box-shadow: none !important;
+    transition: none !important;
+} */
+
+
+/* REMOVE O ICONE DE CALENDARIO 
+-----------------------------------------------*/
+/* input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+} */
+/* Configuração Cores
+___________________________________________________ */
+
+/* Geral */
+
+.bg-base {
+      background: #011A33;
+}
+
+.nav-pills .nav-link.active {
+      background: #011A33;
+      ;
+}
+
+.fa-blue {
+      color: #011a33;
+      transition: 1s;
+}
+
+.fa-white {
+      color: #eee
+}
+
+.text-cor {
+      color: #011a33;
+}
+
+.text-white{
+      color: white;
+}
+
+.sombra-nome {
+      text-shadow: 0.05em 0.092em 0.2em gray;
+}
+
+.section-cor {
+      background: rgb(231, 231, 231);
+}
+
+.btn-confirmar {
+      color: #eee;
+      background: #011a33;
+}
+
+.btn-confirmar:hover {
+      color: #fff;
+      background: #011920;
+      transition: 0.4s;
+}
+
+.btn-cancelar {
+      background: #595c5ee0;
+      color: #fff;
+}
+
+.btn-cancelar:hover {
+      background: #3a3c3dd2;
+      color: #fff;
+}
+
+.legend-fieldset {
+      color: #343a40;
+      /* border-bottom: 1px solid rgba(0, 0, 0, .1); */
+      transition: 0.4s;
+}
+
+.legend-fieldset:hover,
+.legend-fieldset:hover legend {
+      text-decoration: none;
+      transition: 0.4s;
+      /* color: #191c1f; */
+      color: #343a40;
+      text-shadow: 0.1rem 0.1rem 0.3rem gray;
+}
+
+/* Login */
+
+.a-login {
+      color: #595c5ee0;
+      text-decoration: underline;
+}
+
+.a-login:hover {
+      color: #011a33;
+      text-decoration: underline;
+}
+
+/* Perfil */
+
+.a-perfil-estilo {
+      color: #595c5ee0;
+      text-decoration: none;
+      font-size: 22px;
+      transition: 0.4s;
+}
+
+.a-perfil-estilo:hover {
+      color: #011a33;
+      text-shadow: 8px 5px 5px gray;
+      transition: 0.4s;
+      text-decoration: none;
+}
+
+.listador-ativo {
+      color: #011a33;
+      text-shadow: 8px 5px 5px gray;
+      transition: 0.4s;
+      text-decoration: none;
+}
+
+/* CONTROLA O INFORMACAO BTN */
+.a-perfil-informacao {
+      color: #595c5ee0;
+      text-decoration: none;
+      font-size: 22px;
+      transition: 0.4s;
+}
+
+.a-perfil-informacao:hover {
+      color: #011a33;
+      text-shadow: 8px 5px 5px gray;
+      transition: 0.4s;
+      text-decoration: none;
+}
+
+.listador-ativo-informacao {
+      color: #011a33;
+      text-shadow: 8px 5px 5px gray;
+      transition: 0.4s;
+      text-decoration: none;
+}
+/* ============================== */
+
+/* Cadastro */
+.a-info-senha {
+      color: #777;
+}
+
+.a-info-senha:hover {
+      color: #343a40;
+      transition: 0.3s;
+}
+
+
+
+/* Tipografia
+____________________________________________________ */
+
+.h1-ajuste-tamanho {
+      font-size: 2.7em;
+}
+
+.subtitulo {
+      font-size: 1.7em;
+      color: #011a33;
+}
+
+.subtitulo-md {
+      font-size: 1.3em;
+      color: #011a33;
+}
+
+.texto-subtitulo {
+      text-align: justify;
+      font-size: 1.2em;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Padroniza as fontes para o tamanho padrão do body */
+.padronizador {
+      font-size: initial;
+}
+
+.texto-subtitulo-link {
+      color: #011a33;
+      transition: 0.3s;
+}
+
+.a-titulo-form{
+      font-size: 24px;
+}
+
+a.texto-subtitulo-link:active {
+      text-decoration: none;
+}
+
+a.texto-subtitulo-link:visited {
+      color: rgb(108, 108, 108);
+}
+
+a.texto-subtitulo-link:visited:hover {
+      color: #011a33;
+}
+
+a.texto-subtitulo-link:hover {
+      text-decoration: none;
+}
+
+
+
+/* Componentes
+____________________________________________________ */
+
+/* Divisor para o navbar quando em extensão total */
+.divisor {
+      width: 1px;
+      margin: 13px 15px;
+      background: #ddd;
+}
+
+
+.ajuste-container {
+      padding: 3em 1em;
+      margin-top: 5em;
+}
+
+.ajuste-file-input {
+      margin-top: 2em;
+}
+
+/* PARA ATIVAR É PRECISO REMOVER O .shadow-lg DO BOOTSTRAP */
+.box-shadow-titulo {
+      box-shadow: 0.5em 0.8em 2.5em black;
+}
+
+/* Muda o pointer do cursor */
+.nav-pointer:hover {
+      cursor: pointer;
+}
+
+.mb-rem {
+      margin-bottom: 3.5rem;
+}
+
+.a-editar-legend {
+      font-size: 13px;
+}
+
+/* Navbar
+____________________________________________________ */
+
+.logo {
+      font-size: 2em;
+      font-weight: 500;
+      color: #eee;
+}
+
+/* Personaliza o botão navbar-toggler */
+.navbar-dark .navbar-toggler {
+      border: none
+}
+
+/* Personaliza o link ativo */
+.navbar-dark .navbar-nav .nav-link.active {
+      border-bottom: 1px solid #eee;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 2px;
+      display: inline-block;
+      margin: 0 13px;
+      transition: 0.5s;
+}
+
+/* Personaliza o link ativo quando passa o mouse por cima */
+.navbar-dark .navbar-nav .nav-link.active:hover {
+      color: #fff;
+}
+
+/* Personaliza os links */
+.navbar-dark .navbar-nav .nav-link {
+      color: rgba(238, 238, 238, 0.8);
+      padding-left: 13px;
+      padding-right: 13px;
+}
+
+/* Personaliza os links quando passa por cima */
+.navbar-dark .navbar-nav .nav-link:hover {
+      color: rgba(238, 238, 238, 1);
+}
+
+.nav-link-ajuste {
+      padding-left: 9px !important;
+      padding-right: 0 !important;
+}
+
+
+
+/* INDEX
+____________________________________________________ */
+
+#index .nav-pills .nav-link {
+      border-radius: 0rem;
+}
+
+/* INDEX -> Topo 
+-------------------------------------*/
+#topo {
+      margin-bottom: 6em;
+      margin-top: 8em;
+}
+
+/* INDEX -> História 
+-------------------------------------*/
+
+/* INDEX -> Edições 
+-------------------------------------*/
+
+/* INDEX -> Sobre
+-------------------------------------*/
+
+/* INDEX -> localização
+-------------------------------------*/
+
+#localizacao-contato .ajuste-mapa {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      padding-right: 4em;
+}
+
+/* CADASTRO
+____________________________________________________ */
+
+#cadastro {
+      background: rgb(231, 231, 231);
+      /* padding: 3em 2em; */
+      margin-top: 5em;
+}
+
+#cadastro .container {
+      /* background: rgb(231, 231, 231); */
+      padding: 3em 1em;
+}
+
+#cadastro .alert-dark {
+      background: rgba(1, 26, 51, 0.651);
+      color: white;
+}
+
+#cadastro button.close {
+      color: white;
+}
+
+
+/* CADASTRO - FÍSICA 
+_____________________________________________________*/
+
+/* Faz com que torne o cadastro de pessoa fisica, indisponível */
+#informacoesPessoaisFisica-fieldset-fisica select[readonly] {
+      background: #eee;
+      /*Simular campo inativo - Sugestão @GabrielRodrigues*/
+      pointer-events: none;
+      touch-action: none;
+}
+
+.ajuste-container-cadastro {
+      padding: 0;
+      margin: 0;
+      padding-left: 0 !important;
+}
+
+/* CADASTRO - JURÍDICA 
+_____________________________________________________*/
+
+
+/* LOGIN
+_____________________________________________________*/
+
+body#login {
+      background: url(../img/Background-login-projeto-fenix-2.0.jpg) no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+      overflow: hidden;
+
+}
+
+.login-form {
+      margin-bottom: 1rem;
+      margin-top: 10rem;
+      box-shadow: 0px 0px 15px 10px black, 0 0 10px 5px grey;
+      border-radius: 5px;
+      padding-bottom: 30px;
+      background: #eee;
+}
+
+.titulo-login {
+      background-color: rgb(1, 26, 51);
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      color: #ddd;
+      border-radius: 0px 0px 10px 10px;
+}
+
+#login .btn {
+      font-size: 14px;
+      font-weight: 700;
+}
+
+.eye-ajuste-cor:hover {
+      color: #011a33;
+      transition: 0.4s;
+      text-decoration: none;
+}
+
+/* PERFIL 
+____________________________________________________ */
+
+#bem-vindo {
+      background: rgb(231, 231, 231);
+      /* padding: 3em 2em; */
+      /* margin-top: 4.6em; */
+      margin-top: 6.8em;
+}
+
+#bem-vindo .container {
+      padding-left: 0;
+}
+
+#container-principal {
+      margin-top: 4em;
+      background: rgb(231, 231, 231);
+}
+
+.perfil #bem-vindo .text-cor {
+      /* color: rgb(211, 212, 212); */
+      color: #011a33;
+      /* border-bottom: 3px solid #011a33; */
+      border-bottom: 3px solid #4d647a;
+      /* text-shadow: 10px 10px 10px black; */
+}
+
+.perfil .btn-block {
+      height: 30px !important;
+      font-size: 15px !important;
+      padding-top: 2px;
+}
+
+.perfil .h1-ajuste-altura {
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      margin-left: 16px;
+      /* padding: 1px; */
+
+}
+
+.perfil .h1-ajuste-tamanho {
+      font-size: 2.3em;
+}
+
+.perfil .remove-estilo-lista {
+      list-style: none;
+      margin-top: 1em;
+      ;
+}
+
+.perfil .personaliza-ul {
+      padding-left: 0;
+}
+
+.perfil .card {
+      background-color: rgb(245, 245, 245);
+      box-shadow: 7px -2px 20px gray;
+}
+
+.perfil .card-margem {
+      margin-top: 0.3em;
+}
+
+.perfil .sombra:hover {
+      text-shadow: 0.2em 0.5em 0.2em gray;
+      transition: 0.4s;
+}
+
+/* PERMITE QUE O MODAL TENHA ROLAGEM */
+.perfil .modal-dialog.scroll{
+      overflow-y: initial !important
+  }
+ .perfil .modal-body.scroll{
+      height: 250px;
+      overflow-y: auto;
+  }
+
+input[type="date"]::-webkit-inner-spin-button.no-icon-date,
+input[type="date"]::-webkit-calendar-picker-indicator.no-icon-date {
+      display: none;
+      -webkit-appearance: none;
+}
+
+/* PERFIL - ADM
+____________________________________________________ */
+
+
+/* PERFIL - INSTPESSOA
+____________________________________________________ */
+
+
+/* MEDIA QUERIES
+____________________________________________________ */
+
+/* // Extra-Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 360px) {
+      ::-webkit-scrollbar {
+            width: 0px;
+      }
+
+      .login-form {
+            width: 100%;
+            margin-top: 15% !important;
+            /* margin-bottom: 30%; */
+            /* padding-top: 0 !important; */
+      }
+
+      .perfil .label-ajuste {
+            margin-bottom: 0;
+      }
+
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+      ::-webkit-scrollbar {
+            width: 0px;
+      }
+
+      textarea.ajuste-textarea-esm {
+            resize: both;
+            max-height: min-content;
+            min-height: 96px;
+            max-width: 100%;
+            min-width: 240.600px;
+      }
+
+      div#atribuicao-imagem {
+            width: 180px;
+            font-size: 8px;
+            display: none;
+      }
+
+      .login-form {
+            width: 100%;
+            margin-top: 30%;
+      }
+
+      .a-perfil {
+            font-size: 18px;
+      }
+      .a-perfil-informacao{
+            font-size: 18px;
+      }
+
+      .perfil .label-ajuste {
+            margin-bottom: 0;
+      }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+      ::-webkit-scrollbar {
+            width: 0px;
+      }
+
+      .login-form {
+            width: 100%;
+            margin-top: 20%;
+      }
+
+      .a-perfil {
+            font-size: 20px;
+      }
+      .a-perfil-informacao{
+            font-size: 20px;
+      }
+      .perfil .label-ajuste {
+            margin-bottom: 0;
+      }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+      .perfil .btn-block {
+            height: fit-content !important;
+      }
+
+      .a-perfil {
+            font-size: 20px;
+      }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+      /* Personaliza os links quando passa por cima */
+      .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgba(238, 238, 238, 1);
+            margin-bottom: 0px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #eee;
+            transition: 0.4s;
+      }
+
+      .login-form {
+            margin-left: auto;
+            margin-right: auto;
+      }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+      /* Personaliza os links quando passa por cima */
+      .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgba(238, 238, 238, 1);
+            margin-bottom: 0px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #eee;
+            transition: 0.4s;
+      }
+}
